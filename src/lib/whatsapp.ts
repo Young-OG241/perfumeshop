@@ -4,7 +4,7 @@ export type CartLine = { product: Product; quantity: number };
 export type Fulfilment = 'delivery' | 'pickup';
 
 export function getWhatsAppNumber(): string {
-  const raw = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '233753644638';
+  const raw = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '33753644638';
   return raw.replace(/\D/g, '');
 }
 
