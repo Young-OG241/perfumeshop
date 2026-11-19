@@ -1,0 +1,15 @@
+export type Category = 'Floraux' | 'Fruités' | 'Orientaux' | 'Boisés';
+export type Product = { id: string; name: string; category: Category; price: number; description: string; notes: string; image: string; tag?: string };
+
+// Catalogue reconstructed from the old site. Only L'Interdit had a published price.
+// The other prices are editable sample prices: replace them with the boutique's confirmed prices.
+export const products: Product[] = [
+  { id: 'interdit-givenchy', name: "L'Interdit de Givenchy", category: 'Floraux', price: 450, description: 'Un parfum audacieux où la fleur blanche rencontre des notes profondes et sensuelles.', notes: 'Fleurs blanches · Tubéreuse · Bois', image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85', tag: 'À découvrir' },
+  { id: 'essence-rose', name: 'Essence de Rose', category: 'Floraux', price: 180, description: 'Une signature délicate et lumineuse, inspirée par la fraîcheur d’un bouquet de roses.', notes: 'Rose · Pivoine · Musc', image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=85', tag: 'Favori clients' },
+  { id: 'fruite-ete', name: 'Fruité d’Été', category: 'Fruités', price: 160, description: 'Un accord pétillant et gourmand qui évoque les journées ensoleillées.', notes: 'Agrumes · Fruits rouges · Vanille', image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=900&q=85' },
+  { id: 'mystere-oriental', name: 'Mystère Oriental', category: 'Orientaux', price: 220, description: 'Une fragrance enveloppante aux accents épicés, ambrés et chaleureux.', notes: 'Ambre · Épices · Résines', image: 'https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=900&q=85', tag: 'Oriental' },
+  { id: 'bois-precieux', name: 'Bois Précieux', category: 'Boisés', price: 200, description: 'Un sillage élégant et profond, entre bois précieux et douceur veloutée.', notes: 'Santal · Cèdre · Musc', image: 'https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=900&q=85' },
+  { id: 'rose-ambre', name: 'Rose & Ambre', category: 'Orientaux', price: 190, description: 'La rencontre de la rose et de l’ambre pour une présence raffinée.', notes: 'Rose · Ambre · Vanille', image: 'https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=900&q=85' },
+  { id: 'jardin-fruite', name: 'Jardin Fruité', category: 'Fruités', price: 150, description: 'Une composition fraîche et joyeuse aux nuances fruitées.', notes: 'Poire · Pêche · Fleur d’oranger', image: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=900&q=85' },
+  { id: 'musc-blanc', name: 'Musc Blanc', category: 'Boisés', price: 170, description: 'Une fragrance douce, propre et subtile à porter au quotidien.', notes: 'Musc blanc · Iris · Bois doux', image: 'https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85' }
+];
